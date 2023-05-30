@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse
+import uuid
 
 
 class Genre(models.Model):
@@ -55,3 +56,44 @@ class Book(models.Model):
 
     def get_absolute_url(self):
         return reverse("book_detail", kwargs={"pk": self.pk})
+
+    def display_genre(self):
+        return ', '.join(genre.name for genre in self.genre.all()[:3])
+    display_genre.short_description = _('genre')
+
+
+class BookInstance(models.Model):
+    id = models.UUIDField(_("ID"), primary_key=True, default=uuid.uuid4)
+    book = models.ForeignKey(
+        Book, 
+        verbose_name=_("book"), 
+        on_delete=models.CASCADE,
+        related_name='instances',
+    )
+    due_back = models.DateField(_("due back"), null=True, blank=True, db_index=True)
+
+    STATUS_CHOICES = (
+        (0, _('Available')),
+        (1, _('Reserved')),
+        (2, _('Taken')),
+        (3, _('Unavailable')),
+        (7, _('Broken')),
+    )
+    
+    status = models.PositiveSmallIntegerField(
+        _("status"), 
+        choices=STATUS_CHOICES, 
+        default=0,
+        db_index=True
+    )
+
+    class Meta:
+        ordering = ['due_back']
+        verbose_name = _("book instance")
+        verbose_name_plural = _("book instances")
+
+    def __str__(self):
+        return f"{self.book.title} - {self.get_status_display()}"
+
+    def get_absolute_url(self):
+        return reverse("bookinstance_detail", kwargs={"pk": self.pk})
