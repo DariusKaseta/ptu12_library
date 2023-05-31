@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
+from django.views import generic
 from . models import Book, Author, BookInstance, Genre
 
 def index(request):
@@ -32,3 +33,13 @@ def author_detail(request, pk: int):
     return render(request, 'library/author_detail.html', {
         'author': get_object_or_404(Author, pk=pk)
     })
+
+
+class BookListView(generic.ListView):
+    model = Book
+    template_name = 'library/book_list.html'
+
+
+class BookDetailView(generic.DetailView):
+    model = Book
+    template_name = 'library/book_detail.html'

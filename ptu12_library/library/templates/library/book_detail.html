@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{ book.title }} | {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{{ book.title }}</h1>
+<h3>by <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></h3>
+{% if book.genre.count > 0 %}
+    <p>Genre(s):
+        {% for genre in book.genre.all %}
+            <span class="book-genre">{{ genre }}</span>
+        {% endfor %}
+    </p>
+{% endif %}
+<h2>Summary</h2>
+<p>{{ book.summary }}</p>
+{% if book.instances.count > 0 %}
+    <h2>Copies</h2>
+    <ul>
+        {% for copy in book.instances.all %}
+            <li class="book-status-{{ copy.status }}">{{ copy.get_status_display }}{% if copy.due_back %}, should be available {{ copy.due_back }}{% endif %}<span class="book-instance-id">{{ copy.id }}</span></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock content %}

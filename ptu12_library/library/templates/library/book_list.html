@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Books in {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>Books in PTU12 Library</h1>
+{% if book_list %}
+<ul>
+    {% for book in book_list %}
+        <li><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a>
+            by <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No books found</p>
+{% endif %}
+{% endblock content %}

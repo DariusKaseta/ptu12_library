@@ -47,3 +47,20 @@ a {
 footer {
     background-color: #aacc99;
 }
+.book-status-0 {
+    background-color: #c0ffb0;
+}
+.book-status-1 {
+    background-color: #ffcc99;
+}
+.book-status-2 {
+    background-color: #99ccff;
+}
+.book-status-3, .book-status-7 {
+    background-color: #ff9999;
+}
+.book-instance-id {
+    float: right;
+    color: #999999;
+    padding: 0 0.5rem;
+}
