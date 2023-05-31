@@ -18,6 +18,7 @@ class Genre(models.Model):
 class Author(models.Model):
     first_name = models.CharField(_("first name"), max_length=50, db_index=True)
     last_name = models.CharField(_("last name"), max_length=50, db_index=True)
+    biography = models.TextField(_("biography"), max_length=8000, blank=True, null=True)
 
     class Meta:
         ordering = ['last_name', 'first_name']

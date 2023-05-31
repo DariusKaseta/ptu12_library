@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{{ author }} | {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{{ author }}</h1>
+<p>{{ author.biography }}</p>
+{% if author.books.all.count > 0 %}
+<h2>{{ author.last_name }}'s books in our library</h2>
+<ul>
+    {% for book in author.books.all %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock content %}

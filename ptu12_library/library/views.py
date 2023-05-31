@@ -1,8 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from . models import Book, Author, BookInstance, Genre
-
-# Create your views here.
 
 def index(request):
     # Suskaičiuokime keletą pagrindinių objektų
@@ -24,3 +22,13 @@ def index(request):
     }
 
     return render(request, 'library/index.html', context)
+
+def author_list(request):
+    return render(request, 'library/authors.html', {
+        'author_list': Author.objects.all()
+    })
+
+def author_detail(request, pk: int):
+    return render(request, 'library/author_detail.html', {
+        'author': get_object_or_404(Author, pk=pk)
+    })
