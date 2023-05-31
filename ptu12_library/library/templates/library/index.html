@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Welcome to {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>PTU12 Library</h1>
+<p>Welcome to book paradise!</p>
+<p>Currently available:</p>
+<ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Book Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Available Copies:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+</ul>
+{% endblock content %}
