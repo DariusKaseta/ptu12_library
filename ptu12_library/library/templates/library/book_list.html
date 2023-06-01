@@ -10,7 +10,7 @@
             by <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></li>
     {% endfor %}
 </ul>
-{% include 'includes/paginator_nav.html' %}
+{% include 'includes/paginator_pages.html' %}
 {% else %}
 <p>No books found</p>
 {% endif %}

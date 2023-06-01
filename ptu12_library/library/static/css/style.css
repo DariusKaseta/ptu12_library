@@ -64,13 +64,17 @@ footer {
     color: #999999;
     padding: 0 0.5rem;
 }
+ul.paginator {
+    list-style: none;
+    padding-inline-start: 0.5rem;
+}
 .paginator {
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
     gap: 0.5rem;
 }
-.paginator a {
+.paginator a, .paginator .current {
     text-decoration: none;
     padding: 0 0.5rem;
     border: 1px solid #aacc99;

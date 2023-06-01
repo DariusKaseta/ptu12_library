@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from . models import Book, Author, BookInstance, Genre
@@ -25,8 +25,10 @@ def index(request):
     return render(request, 'library/index.html', context)
 
 def author_list(request):
+    paginator = Paginator(Author.objects.all(), 5)
+    author_list = paginator.get_page(request.GET.get('page'))
     return render(request, 'library/authors.html', {
-        'author_list': Author.objects.all()
+        'author_list': author_list,
     })
 
 def author_detail(request, pk: int):
