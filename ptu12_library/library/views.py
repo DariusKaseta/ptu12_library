@@ -37,6 +37,7 @@ def author_detail(request, pk: int):
 
 class BookListView(generic.ListView):
     model = Book
+    paginate_by = 10
     template_name = 'library/book_list.html'
 
 
