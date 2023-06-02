@@ -1,4 +1,7 @@
-html { font-family: sans-serif; }
+html { 
+    font-family: sans-serif; 
+    font-size: 125%;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -80,4 +83,7 @@ ul.paginator {
     border: 1px solid #aacc99;
     background-color: #e8ffd0;
     border-radius: 0.5rem;
+}
+form {
+    padding: 0.5rem;
 }

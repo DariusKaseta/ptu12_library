@@ -2,6 +2,11 @@
 {% block title %}Books in {{ block.super }}{% endblock title %}
 {% block content %}
 <h1>Books in PTU12 Library</h1>
+<form action="" method="get">
+    <input name="query" type="text" value="{{ request.GET.query }}">
+    <button type="submit">&#128269;</button>
+    {% if request.GET.query %}<a href="{{ request.path }}">clear</a>{% endif %}
+</form>
 {% if book_list %}
 {% include 'includes/paginator_nav.html' %}
 <ul>

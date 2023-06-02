@@ -1,4 +1,7 @@
+from typing import Any
 from django.core.paginator import Paginator
+from django.db.models.query import QuerySet
+from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from . models import Book, Author, BookInstance, Genre
@@ -39,8 +42,19 @@ def author_detail(request, pk: int):
 
 class BookListView(generic.ListView):
     model = Book
-    paginate_by = 10
+    paginate_by = 5
     template_name = 'library/book_list.html'
+
+    def get_queryset(self) -> QuerySet[Any]:
+        qs = super().get_queryset()
+        query = self.request.GET.get('query')
+        if query:
+            qs = qs.filter(
+                Q(title__icontains=query) |
+                Q(summary__icontains=query) |
+                Q(author__last_name__istartswith=query)
+            )
+        return qs
 
 
 class BookDetailView(generic.DetailView):
