@@ -87,3 +87,22 @@ ul.paginator {
 form {
     padding: 0.5rem;
 }
+img.book-cover {
+    max-width: 20%;
+    margin: 0 0.5rem;
+    border: 2px solid #000;
+}
+ul.book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.5rem;
+    padding-inline-start: 0;
+}
+ul.book-list li {
+    max-width: 30vw;
+}
+ul.book-list img.book-cover {
+    max-width: 100%;
+}

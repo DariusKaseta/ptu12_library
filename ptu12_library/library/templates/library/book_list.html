@@ -1,14 +1,30 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Books in {{ block.super }}{% endblock title %}
 {% block content %}
 <h1>Books in PTU12 Library</h1>
 {% include 'includes/search.html' %}
 {% if book_list %}
 {% include 'includes/paginator_nav.html' %}
-<ul>
+<ul class="book-list">
     {% for book in book_list %}
-        <li><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a>
-            by <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></li>
+        <li>
+            <a href="{% url 'book_detail' book.pk %}">
+                {% if book.cover %}
+                    <img class="book-cover" src="{{ book.cover.url }}">
+                {% else %}
+                    <img class="book-cover" src="{% static 'library/img/default_cover.jpg' %}">
+                {% endif %}
+                <h3>
+                    {% if book.title|length > 36 %}
+                        {{ book.title|slice:35 }}...
+                    {% else %}
+                        {{ book.title }}
+                    {% endif %}
+                </h3>
+            </a>
+            <p>by <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></p>
+        </li>
     {% endfor %}
 </ul>
 {% include 'includes/paginator_pages.html' %}

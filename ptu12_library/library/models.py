@@ -50,6 +50,12 @@ class Book(models.Model):
         verbose_name=_("genre(s)"), 
         help_text=_("choose genre(s) for this book")
     )
+    cover = models.ImageField(
+        _("cover"), 
+        upload_to='library/book_covers', 
+        null=True, 
+        blank=True,
+    )
 
     class Meta:
         ordering = ['title']

@@ -51,7 +51,7 @@ def author_detail(request, pk: int):
 
 class BookListView(generic.ListView):
     model = Book
-    paginate_by = 5
+    paginate_by = 6
     template_name = 'library/book_list.html'
 
     def get_queryset(self) -> QuerySet[Any]:
