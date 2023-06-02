@@ -28,7 +28,16 @@ def index(request):
     return render(request, 'library/index.html', context)
 
 def author_list(request):
-    paginator = Paginator(Author.objects.all(), 5)
+    qs = Author.objects
+    query = request.GET.get('query')
+    if query:
+        qs = qs.filter(
+            Q(last_name__istartswith=query) |
+            Q(first_name__icontains=query)
+        )
+    else:
+        qs = qs.all()
+    paginator = Paginator(qs, 5)
     author_list = paginator.get_page(request.GET.get('page'))
     return render(request, 'library/authors.html', {
         'author_list': author_list,

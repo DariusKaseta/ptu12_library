@@ -2,6 +2,7 @@
 {% block title %}Authors in {{ block.super }}{% endblock title %}
 {% block content %}
 <h1>Authors</h1>
+{% include 'includes/search.html' %}
 {% if author_list %}
 {% with author_list as page_obj %}
     {% include 'includes/paginator_nav.html' %}
