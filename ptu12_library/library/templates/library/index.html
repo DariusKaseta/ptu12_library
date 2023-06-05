@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load humanize %}
 {% block title %}Welcome to {{ block.super }}{% endblock title %}
 {% block content %}
 <h1>PTU12 Library</h1>
@@ -9,5 +10,6 @@
     <li><strong>Book Copies:</strong> {{ num_instances }}</li>
     <li><strong>Available Copies:</strong> {{ num_instances_available }}</li>
     <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li>You're visiting us already for the <strong>{{ num_visits|ordinal }}</strong> time</li>
 </ul>
 {% endblock content %}
