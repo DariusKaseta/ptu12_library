@@ -1,7 +1,11 @@
+from django.contrib.auth import get_user_model
+from datetime import date
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse
 import uuid
+
+User = get_user_model()
 
 
 class Genre(models.Model):
@@ -82,6 +86,13 @@ class BookInstance(models.Model):
         related_name='instances',
     )
     due_back = models.DateField(_("due back"), null=True, blank=True, db_index=True)
+    reader = models.ForeignKey(
+        User, 
+        verbose_name=_("reader"), 
+        on_delete=models.CASCADE,
+        related_name='book_instances',
+        null=True, blank=True,
+    )
 
     STATUS_CHOICES = (
         (0, _('Available')),
@@ -97,6 +108,12 @@ class BookInstance(models.Model):
         default=0,
         db_index=True
     )
+
+    @property
+    def is_overdue(self):
+        if self.due_back and date.today() > self.due_back:
+            return True
+        return False
 
     class Meta:
         ordering = ['due_back']

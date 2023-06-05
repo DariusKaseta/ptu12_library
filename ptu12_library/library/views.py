@@ -1,4 +1,5 @@
 from typing import Any
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
 from django.db.models.query import QuerySet
 from django.db.models import Q
@@ -74,3 +75,14 @@ class BookListView(generic.ListView):
 class BookDetailView(generic.DetailView):
     model = Book
     template_name = 'library/book_detail.html'
+
+
+class UserBookInstanceListView(LoginRequiredMixin, generic.ListView):
+    model = BookInstance
+    template_name = 'library/user_bookinstance_list.html'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        qs = super().get_queryset()
+        qs = qs.filter(reader=self.request.user)
+        return qs

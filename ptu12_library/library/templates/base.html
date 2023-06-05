@@ -20,8 +20,9 @@
                 &#128100; {{ user.username }}
             </li>
             <li><a href="{% url 'logout' %}">Logout</a></li>
+            <li><a href="{% url 'user_book_instances' %}">My Books</a></li>
         {% else %}
-            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'login' %}?next={{request.path}}">Login</a></li>
         {% endif %}
         {% if user.is_authenticated %}
             {% if user.is_staff or user.is_superuser %}

@@ -106,3 +106,9 @@ ul.book-list li {
 ul.book-list img.book-cover {
     max-width: 100%;
 }
+.book-overdue {
+    background-color: #aa0000;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 0 0.5rem;
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}My Book at {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>My borrowed books</h1>
+{% if bookinstance_list %}
+<ul>
+    {% for copy in bookinstance_list %}
+        <li class="book-status-{{ copy.status }}">
+            <a href="{% url 'book_detail' copy.book.pk %}">{{ copy.book.title }}</a>
+            {{ copy.get_status_display }}{% if copy.due_back %}, return by {{ copy.due_back }}{% endif %}
+            {% if copy.status == 2 and copy.is_overdue %}<span class="book-overdue">OVERDUE!</span>{% endif %}
+            <span class="book-instance-id">{{ copy.id }}</span>
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="box box-warning">
+    Book borrowing history is still empty. Take some books!
+</p>
+{% endif %}
+{% endblock content %}
