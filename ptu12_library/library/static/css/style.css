@@ -133,3 +133,7 @@ ul.book-list img.book-cover {
 .box-debug {
     background-color: #eeeeee;
 }
+form p label {
+    display: inline-block;
+    min-width: 12vw;
+}
