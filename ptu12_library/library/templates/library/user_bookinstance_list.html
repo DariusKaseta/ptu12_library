@@ -3,6 +3,7 @@
 {% block content %}
 <h1>My borrowed books</h1>
 {% if bookinstance_list %}
+{% include 'includes/paginator_nav.html' %}
 <ul>
     {% for copy in bookinstance_list %}
         <li class="book-status-{{ copy.status }}">
@@ -13,6 +14,7 @@
         </li>
     {% endfor %}
 </ul>
+{% include 'includes/paginator_pages.html' %}
 {% else %}
 <p class="box box-warning">
     Book borrowing history is still empty. Take some books!

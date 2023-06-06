@@ -17,7 +17,7 @@
     </p>
 {% endif %}
 <h2>Summary</h2>
-<p>{{ book.summary }}</p>
+{{ book.summary|safe }}
 {% if book.instances.count > 0 %}
     <h2>Copies</h2>
     <ul>

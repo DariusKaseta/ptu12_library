@@ -3,6 +3,7 @@ from datetime import date
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse
+from tinymce.models import HTMLField
 import uuid
 
 User = get_user_model()
@@ -22,7 +23,7 @@ class Genre(models.Model):
 class Author(models.Model):
     first_name = models.CharField(_("first name"), max_length=50, db_index=True)
     last_name = models.CharField(_("last name"), max_length=50, db_index=True)
-    biography = models.TextField(_("biography"), max_length=8000, blank=True, null=True)
+    biography = HTMLField(_("biography"), max_length=8000, blank=True, null=True)
 
     class Meta:
         ordering = ['last_name', 'first_name']
@@ -42,7 +43,7 @@ class Author(models.Model):
 
 class Book(models.Model):
     title = models.CharField(_("title"), max_length=250, db_index=True)
-    summary = models.TextField(_("summary"), max_length=4000)
+    summary = HTMLField(_("summary"), max_length=4000)
     author = models.ForeignKey(
         Author, 
         verbose_name=_("author"), 
