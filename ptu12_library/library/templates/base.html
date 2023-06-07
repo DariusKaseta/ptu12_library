@@ -16,9 +16,7 @@
         <li><a href="{% url 'author_list' %}">Authors</a></li>
         <li><a href="{% url 'book_list' %}">Books</a></li>
         {% if user.is_authenticated %}
-            <li class="user">
-                &#128100; {{ user.username }}
-            </li>
+            <li><a href="{% url 'profile' %}">&#128100; {{ user.username }}</a></li>
             <li><a href="{% url 'logout' %}">Logout</a></li>
             <li><a href="{% url 'user_book_instances' %}">My Books</a></li>
         {% else %}
