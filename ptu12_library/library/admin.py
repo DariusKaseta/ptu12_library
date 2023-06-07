@@ -34,7 +34,12 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display_links = ('last_name', )
 
 
+class BookReviewAdmin(admin.ModelAdmin):
+    list_display = ('reviewed_at', 'book', 'reviewer', 'content')
+
+
 admin.site.register(models.Author, AuthorAdmin)
 admin.site.register(models.Book, BookAdmin)
 admin.site.register(models.Genre)
 admin.site.register(models.BookInstance, BookInstanceAdmin)
+admin.site.register(models.BookReview, BookReviewAdmin)

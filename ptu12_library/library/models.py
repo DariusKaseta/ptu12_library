@@ -126,3 +126,33 @@ class BookInstance(models.Model):
 
     def get_absolute_url(self):
         return reverse("bookinstance_detail", kwargs={"pk": self.pk})
+
+
+class BookReview(models.Model):
+    book = models.ForeignKey(
+        Book, 
+        verbose_name=_("book"), 
+        on_delete=models.CASCADE,
+        related_name='reviews',
+    )
+    reviewer = models.ForeignKey(
+        User, 
+        verbose_name=_("reviewer"), 
+        on_delete=models.SET_NULL,
+        related_name='book_reviews',
+        null=True, blank=True,
+    )
+    reviewed_at = models.DateTimeField(_("Reviewed"), auto_now_add=True)
+    content = models.TextField(_("content"), max_length=4000)
+
+    class Meta:
+        ordering = ['-reviewed_at']
+        verbose_name = _("book review")
+        verbose_name_plural = _("book reviews")
+
+    def __str__(self):
+        return f"{self.reviewed_at}: {self.reviewer}"
+
+    def get_absolute_url(self):
+        return reverse("bookreview_detail", kwargs={"pk": self.pk})
+
