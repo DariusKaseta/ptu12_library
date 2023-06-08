@@ -40,11 +40,11 @@
 {% if book.reviews.count > 0 %}
     <ul>
         {% for review in book.reviews.all %}
-            <li>{{ review.reviewed_at }} by 
+            <li>{{ review.reviewed_at }} by <a href="{% url 'profile' review.reviewer.id %}">
                 {% if review.reviewer.profile.picture %}
                     <img src="{{ review.reviewer.profile.picture.url }}" class="user-avatar">
                 {% endif %}
-                {{ review.reviewer }}<br>
+                {{ review.reviewer }}</a><br>
                 {{ review.content }}
             </li>
         {% endfor %}
