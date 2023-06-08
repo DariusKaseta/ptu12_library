@@ -27,8 +27,9 @@ class Profile(models.Model):
 
     def save(self, *args, **kwargs) -> None:
         super().save(*args, **kwargs)
-        pic = Image.open(self.picture.path)
-        if pic.width > 300 or pic.height > 300:
-            new_size = (300, 300)
-            pic.thumbnail(new_size)
-            pic.save(self.picture.path)
+        if self.picture:
+            pic = Image.open(self.picture.path)
+            if pic.width > 300 or pic.height > 300:
+                new_size = (300, 300)
+                pic.thumbnail(new_size)
+                pic.save(self.picture.path)
