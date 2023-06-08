@@ -146,3 +146,7 @@ img.user-profile-picture {
     border-radius: 1rem;
     float: left;
 }
+img.user-avatar {
+    max-height: 1rem;
+    border-radius: 0.5rem;
+}
