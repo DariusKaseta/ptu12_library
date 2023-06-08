@@ -1,14 +1,16 @@
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.core.paginator import Paginator
+from datetime import date, timedelta
 from django.db.models.query import QuerySet
 from django.db.models import Q
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404
+from django.urls import reverse, reverse_lazy
 from django.utils.translation import gettext_lazy as _
 from django.views import generic
-from . forms import BookReviewForm
+from . forms import BookReviewForm, BookInstanceForm
 from . models import Book, Author, BookInstance, Genre
 
 def index(request):
@@ -115,3 +117,30 @@ class UserBookInstanceListView(LoginRequiredMixin, generic.ListView):
         qs = super().get_queryset()
         qs = qs.filter(reader=self.request.user)
         return qs
+
+
+class BookInstanceCreateView(LoginRequiredMixin, generic.CreateView):
+    model = BookInstance
+    form_class = BookInstanceForm
+    template_name = 'library/bookinstance_form.html'
+    success_url = reverse_lazy('user_book_instances')
+
+    def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['book'] = self.book
+        return context
+
+    def get_initial(self) -> Dict[str, Any]:
+        self.book = get_object_or_404(Book, id=self.request.GET.get('book_id'))
+        initial = super().get_initial()
+        initial['book'] = self.book
+        initial['reader'] = self.request.user
+        initial['due_back'] = date.today() + timedelta(days=14)
+        initial['status'] = 1
+        return initial
+
+    def form_valid(self, form):
+        form.instance.book = self.book
+        form.instance.reader = self.request.user
+        form.instance.status = 1
+        return super().form_valid(form)

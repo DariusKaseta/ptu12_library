@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Reserve {{ book.title }} at {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>Reserve a copy of {{ book.title }} by {{ book.author }}</h1>
+<form method="post" action="{{ request.path }}?book_id={{ book.id }}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Confirm Reservation</button>
+</form>
+{% endblock content %}

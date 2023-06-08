@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}{{ book.title }} | {{ block.super }}{% endblock title %}
 {% block content %}
-<h1>{{ book.title }}</h1>
+<h1>{{ book.title }}<a class="button float-right" href="{% url 'bookinstance_create' %}?book_id={{ book.id }}">Reserve</a></h1>
 {% if book.cover %}
     <img class="book-cover" src="{{ book.cover.url }}">
 {% else %}
