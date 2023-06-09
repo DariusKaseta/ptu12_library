@@ -11,6 +11,9 @@
                 <a class="button" href="{% url 'bookinstance_update' copy.pk %}">
                     {% if copy.status == 1 %}Take{% else %}Extend{% endif %}
                 </a>
+                {% if copy.status == 2 %}
+                <a class="button box-success" href="{% url 'bookinstance_delete' copy.pk %}">Return</a>
+                {% endif %}
             {% endif %}
             <a href="{% url 'book_detail' copy.book.pk %}">{{ copy.book.title }}</a>
             {{ copy.get_status_display }}{% if copy.due_back %}, return by {{ copy.due_back }}{% endif %}

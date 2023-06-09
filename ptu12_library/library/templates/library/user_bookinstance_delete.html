@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Returning {{ object.book }} to {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>Confirm Returning Book</h1>
+<p>Title: {{ object.book.title }}</p>
+<p>Author: {{ object.book.author }}</p>
+<p>Copy ID: {{ object.id }}</p>
+<p class="{% if object.is_overdue %}book-overdue{% endif %}">Due date: {{ object.due_back }}</p>
+<form action="{{ request.path }}" method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm Return</button>
+    <a href="{% url 'user_book_instances' %}">Change my mind</a>
+</form>
+{% endblock content %}

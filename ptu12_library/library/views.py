@@ -147,10 +147,10 @@ class BookInstanceCreateView(LoginRequiredMixin, generic.CreateView):
 
 
 class BookInstanceUpdateView(
-        LoginRequiredMixin, 
-        UserPassesTestMixin, 
-        generic.UpdateView
-    ):
+    LoginRequiredMixin, 
+    UserPassesTestMixin, 
+    generic.UpdateView
+):
     model = BookInstance
     form_class = BookInstanceForm
     template_name = 'library/bookinstance_form.html'
@@ -177,7 +177,20 @@ class BookInstanceUpdateView(
         form.instance.status = 2
         return super().form_valid(form)
 
-    def test_func(self):
+    def test_func(self) -> bool | None:
         obj = self.get_object()
         return obj.reader == self.request.user
 
+
+class BookInstanceDeleteView(
+    LoginRequiredMixin,
+    UserPassesTestMixin,
+    generic.DeleteView
+):
+    model = BookInstance
+    template_name = 'library/user_bookinstance_delete.html'
+    success_url = reverse_lazy('user_book_instances')
+
+    def test_func(self) -> bool | None:
+        obj = self.get_object()
+        return obj.reader == self.request.user
