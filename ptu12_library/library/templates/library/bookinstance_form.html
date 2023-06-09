@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-{% block title %}Reserve {{ book.title }} at {{ block.super }}{% endblock title %}
+{% block title %}{% if taking %}Take{% elif extending %}Extend{% else %}Reserve{% endif %} {{ book.title }} at {{ block.super }}{% endblock title %}
 {% block content %}
-<h1>Reserve a copy of {{ book.title }} by {{ book.author }}</h1>
+<h1>{% if taking %}Take{% elif extending %}Extend{% else %}Reserve{% endif %} a copy of {{ book.title }} by {{ book.author }}</h1>
 <form method="post" action="{{ request.path }}?book_id={{ book.id }}">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Confirm Reservation</button>
+    <button type="submit">Confirm {% if taking %}Borrowing{% elif extending %}Extension{% else %}Reservation{% endif %}</button>
 </form>
 {% endblock content %}

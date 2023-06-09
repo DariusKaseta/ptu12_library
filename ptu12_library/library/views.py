@@ -1,5 +1,5 @@
 from typing import Any, Dict, Optional
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib import messages
 from django.core.paginator import Paginator
 from datetime import date, timedelta
@@ -144,3 +144,40 @@ class BookInstanceCreateView(LoginRequiredMixin, generic.CreateView):
         form.instance.reader = self.request.user
         form.instance.status = 1
         return super().form_valid(form)
+
+
+class BookInstanceUpdateView(
+        LoginRequiredMixin, 
+        UserPassesTestMixin, 
+        generic.UpdateView
+    ):
+    model = BookInstance
+    form_class = BookInstanceForm
+    template_name = 'library/bookinstance_form.html'
+    success_url = reverse_lazy('user_book_instances')
+
+    def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        obj = self.get_object()
+        context['book'] = obj.book
+        if obj.status == 1:
+            context['taking'] = True
+        else:
+            context['extending'] = True
+        return context
+
+    def get_initial(self) -> Dict[str, Any]:
+        initial = super().get_initial()
+        initial['due_back'] = date.today() + timedelta(days=14)
+        initial['status'] = 2
+        return initial
+
+    def form_valid(self, form):
+        form.instance.reader = self.request.user
+        form.instance.status = 2
+        return super().form_valid(form)
+
+    def test_func(self):
+        obj = self.get_object()
+        return obj.reader == self.request.user
+

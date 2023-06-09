@@ -9,5 +9,6 @@ urlpatterns = [
     path('book/<int:pk>/', views.BookDetailView.as_view(), name='book_detail'),
     path('books/my/', views.UserBookInstanceListView.as_view(), name='user_book_instances'),
     path('book/reserve/', views.BookInstanceCreateView.as_view(), name='bookinstance_create'),
-
+    path('book/take/<uuid:pk>/', views.BookInstanceUpdateView.as_view(), name='bookinstance_update'),
+    
 ]

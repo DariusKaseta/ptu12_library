@@ -7,6 +7,11 @@
 <ul>
     {% for copy in bookinstance_list %}
         <li class="book-status-{{ copy.status }}">
+            {% if copy.status > 0 and copy.status < 3 %}
+                <a class="button" href="{% url 'bookinstance_update' copy.pk %}">
+                    {% if copy.status == 1 %}Take{% else %}Extend{% endif %}
+                </a>
+            {% endif %}
             <a href="{% url 'book_detail' copy.book.pk %}">{{ copy.book.title }}</a>
             {{ copy.get_status_display }}{% if copy.due_back %}, return by {{ copy.due_back }}{% endif %}
             {% if copy.status == 2 and copy.is_overdue %}<span class="book-overdue">OVERDUE!</span>{% endif %}
