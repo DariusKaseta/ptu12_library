@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-{% load static %}
-<html lang="en">
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+<html lang="{{ LANGUAGE_CODE }}">
 <head>{# nematoma dalis #}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +30,17 @@
                 <li><a href="{% url 'admin:index' %}">Admin</a></li>
             {% endif %}
         {% endif %}
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ redirect_to }}">
+            <select name="language" onchange="this.form.submit();">
+                {% for lang in LANGUAGES %}
+                    <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                        {{ lang.1 }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
     </ul>
 </header>
 <main>
