@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-12 09:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+#: library/admin.py:27
+msgid "General"
+msgstr ""
+
+#: library/admin.py:28
+msgid "Availability"
+msgstr ""
+
+#: library/models.py:13
+msgid "name"
+msgstr ""
+
+#: library/models.py:16 library/models.py:78
+msgid "genre"
+msgstr ""
+
+#: library/models.py:17
+msgid "genres"
+msgstr ""
+
+#: library/models.py:24
+msgid "first name"
+msgstr ""
+
+#: library/models.py:25
+msgid "last name"
+msgstr ""
+
+#: library/models.py:26
+msgid "biography"
+msgstr ""
+
+#: library/models.py:30 library/models.py:49
+msgid "author"
+msgstr ""
+
+#: library/models.py:31 library/templates/base.html:18
+msgid "authors"
+msgstr ""
+
+#: library/models.py:41 library/models.py:68 library/templates/base.html:19
+msgid "books"
+msgstr ""
+
+#: library/models.py:45
+msgid "title"
+msgstr ""
+
+#: library/models.py:46
+msgid "summary"
+msgstr ""
+
+#: library/models.py:55
+msgid "genre(s)"
+msgstr ""
+
+#: library/models.py:56
+msgid "choose genre(s) for this book"
+msgstr ""
+
+#: library/models.py:59
+msgid "cover"
+msgstr ""
+
+#: library/models.py:67 library/models.py:85 library/models.py:134
+msgid "book"
+msgstr ""
+
+#: library/models.py:82
+msgid "ID"
+msgstr ""
+
+#: library/models.py:89
+msgid "due back"
+msgstr ""
+
+#: library/models.py:92
+msgid "reader"
+msgstr ""
+
+#: library/models.py:99
+msgid "Available"
+msgstr ""
+
+#: library/models.py:100
+msgid "Reserved"
+msgstr ""
+
+#: library/models.py:101
+msgid "Taken"
+msgstr ""
+
+#: library/models.py:102
+msgid "Unavailable"
+msgstr ""
+
+#: library/models.py:103
+msgid "Broken"
+msgstr ""
+
+#: library/models.py:107
+msgid "status"
+msgstr ""
+
+#: library/models.py:121
+msgid "book instance"
+msgstr ""
+
+#: library/models.py:122
+msgid "book instances"
+msgstr ""
+
+#: library/models.py:140
+msgid "reviewer"
+msgstr ""
+
+#: library/models.py:145
+msgid "Reviewed"
+msgstr ""
+
+#: library/models.py:146
+msgid "content"
+msgstr ""
+
+#: library/models.py:150
+msgid "book review"
+msgstr ""
+
+#: library/models.py:151
+msgid "book reviews"
+msgstr ""
+
+#: library/templates/base.html:10 library/templates/base.html:16
+msgid "library"
+msgstr ""
+
+#: library/templates/base.html:17
+msgid "home"
+msgstr ""
+
+#: library/templates/base.html:22
+msgid "logout"
+msgstr ""
+
+#: library/templates/base.html:23
+msgid "my books"
+msgstr ""
+
+#: library/templates/base.html:25
+msgid "login"
+msgstr ""
+
+#: library/templates/base.html:26
+msgid "Sign up"
+msgstr ""
+
+#: library/templates/base.html:30
+msgid "admin"
+msgstr ""
+
+#: library/templates/base.html:54
+msgid "team"
+msgstr ""
+
+#: library/views.py:104
+msgid "Review posted!"
+msgstr ""
+
+#: library/views.py:178
+msgid "Book now is taken or extended."
+msgstr ""
+
+#: library/views.py:196
+msgid "Book is now returned."
+msgstr ""

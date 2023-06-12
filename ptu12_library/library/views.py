@@ -175,7 +175,7 @@ class BookInstanceUpdateView(
     def form_valid(self, form):
         form.instance.reader = self.request.user
         form.instance.status = 2
-        messages.success(self.request, 'Book now is taken or extended.')
+        messages.success(self.request, _('Book now is taken or extended.'))
         return super().form_valid(form)
 
     def test_func(self) -> bool | None:
@@ -193,7 +193,7 @@ class BookInstanceDeleteView(
     success_url = reverse_lazy('user_book_instances')
 
     def form_valid(self, form):
-        messages.success(self.request, 'Book is now returned.')
+        messages.success(self.request, _('Book is now returned.'))
         return super().form_valid(form)
 
     def test_func(self) -> bool | None:

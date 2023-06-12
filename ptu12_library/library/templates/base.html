@@ -7,27 +7,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}PTU12 Library{% endblock title %}</title>
+    <title>{% block title %}PTU12 {% trans "library"|capfirst %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 <header>
     <ul class="nav">
-        <li class="logo">&#128218; PTU12 Library</li>
-        <li><a href="{% url 'index' %}">Home</a></li>
-        <li><a href="{% url 'author_list' %}">Authors</a></li>
-        <li><a href="{% url 'book_list' %}">Books</a></li>
+        <li class="logo">&#128218; PTU12 {% trans "library"|capfirst %}</li>
+        <li><a href="{% url 'index' %}">{% trans "home"|capfirst %}</a></li>
+        <li><a href="{% url 'author_list' %}">{% trans "authors"|capfirst %}</a></li>
+        <li><a href="{% url 'book_list' %}">{% trans "books"|capfirst %}</a></li>
         {% if user.is_authenticated %}
             <li><a href="{% url 'profile' %}">&#128100; {{ user.get_username }}</a></li>
-            <li><a href="{% url 'logout' %}">Logout</a></li>
-            <li><a href="{% url 'user_book_instances' %}">My Books</a></li>
+            <li><a href="{% url 'logout' %}">{% trans "logout"|title %}</a></li>
+            <li><a href="{% url 'user_book_instances' %}">{% trans "my books"|title %}</a></li>
         {% else %}
-            <li><a href="{% url 'login' %}?next={{request.path}}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign up</a></li>
+            <li><a href="{% url 'login' %}?next={{request.path}}">{% trans "login"|capfirst %}</a></li>
+            <li><a href="{% url 'signup' %}">{% trans "Sign up"|capfirst %}</a></li>
         {% endif %}
         {% if user.is_authenticated %}
             {% if user.is_staff or user.is_superuser %}
-                <li><a href="{% url 'admin:index' %}">Admin</a></li>
+                <li><a href="{% url 'admin:index' %}">{% trans "admin"|capfirst %}</a></li>
             {% endif %}
         {% endif %}
         <form action="{% url 'set_language' %}" method="post">
@@ -51,6 +51,6 @@
 {% endif %}
 {% block content %}
 {% endblock content %}</main>
-<footer><p>&copy; 2023 <a href="https://discord.gg/QAUWnqGF" target="_blank">PTU12 Team</a></p></footer>
+<footer><p>&copy; 2023 <a href="https://discord.gg/QAUWnqGF" target="_blank">PTU12 {% trans "team"|capfirst %}</a></p></footer>
 </body>
 </html>
