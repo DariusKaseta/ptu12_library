@@ -21,176 +21,176 @@ msgstr ""
 "1 : n % 1 != 0 ? 2: 3);\n"
 #: library/admin.py:27
 msgid "General"
-msgstr ""
+msgstr "Pagrindinis"
 
 #: library/admin.py:28
 msgid "Availability"
-msgstr ""
+msgstr "Prieinamumas"
 
 #: library/models.py:13
 msgid "name"
-msgstr ""
+msgstr "pavadinimas"
 
 #: library/models.py:16 library/models.py:78
 msgid "genre"
-msgstr ""
+msgstr "žanras"
 
 #: library/models.py:17
 msgid "genres"
-msgstr ""
+msgstr "žanrai"
 
 #: library/models.py:24
 msgid "first name"
-msgstr ""
+msgstr "vardas"
 
 #: library/models.py:25
 msgid "last name"
-msgstr ""
+msgstr "pavardė"
 
 #: library/models.py:26
 msgid "biography"
-msgstr ""
+msgstr "biografija"
 
 #: library/models.py:30 library/models.py:49
 msgid "author"
-msgstr ""
+msgstr "autorius"
 
 #: library/models.py:31 library/templates/base.html:18
 msgid "authors"
-msgstr ""
+msgstr "autoriai"
 
 #: library/models.py:41 library/models.py:68 library/templates/base.html:19
 msgid "books"
-msgstr ""
+msgstr "knygos"
 
 #: library/models.py:45
 msgid "title"
-msgstr ""
+msgstr "pavadinimas"
 
 #: library/models.py:46
 msgid "summary"
-msgstr ""
+msgstr "santrauka"
 
 #: library/models.py:55
 msgid "genre(s)"
-msgstr ""
+msgstr "žanras(-ai)"
 
 #: library/models.py:56
 msgid "choose genre(s) for this book"
-msgstr ""
+msgstr "pasirinkite žanrą(-us) šiai knygai"
 
 #: library/models.py:59
 msgid "cover"
-msgstr ""
+msgstr "viršelis"
 
 #: library/models.py:67 library/models.py:85 library/models.py:134
 msgid "book"
-msgstr ""
+msgstr "knyga"
 
 #: library/models.py:82
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: library/models.py:89
 msgid "due back"
-msgstr ""
+msgstr "grąžinti iki"
 
 #: library/models.py:92
 msgid "reader"
-msgstr ""
+msgstr "skaitytojas"
 
 #: library/models.py:99
 msgid "Available"
-msgstr ""
+msgstr "Prieinama"
 
 #: library/models.py:100
 msgid "Reserved"
-msgstr ""
+msgstr "Rezervuota"
 
 #: library/models.py:101
 msgid "Taken"
-msgstr ""
+msgstr "Paimta"
 
 #: library/models.py:102
 msgid "Unavailable"
-msgstr ""
+msgstr "Neprieinama"
 
 #: library/models.py:103
 msgid "Broken"
-msgstr ""
+msgstr "Sugadinta"
 
 #: library/models.py:107
 msgid "status"
-msgstr ""
+msgstr "statusas"
 
 #: library/models.py:121
 msgid "book instance"
-msgstr ""
+msgstr "knygos kopija"
 
 #: library/models.py:122
 msgid "book instances"
-msgstr ""
+msgstr "knygos kopijos"
 
 #: library/models.py:140
 msgid "reviewer"
-msgstr ""
+msgstr "apžvalgininkas"
 
 #: library/models.py:145
 msgid "Reviewed"
-msgstr ""
+msgstr "Peržiūrėta"
 
 #: library/models.py:146
 msgid "content"
-msgstr ""
+msgstr "turinys"
 
 #: library/models.py:150
 msgid "book review"
-msgstr ""
+msgstr "knygos peržiūra"
 
 #: library/models.py:151
 msgid "book reviews"
-msgstr ""
+msgstr "knygos peržiūros"
 
 #: library/templates/base.html:10 library/templates/base.html:16
 msgid "library"
-msgstr ""
+msgstr "biblioteka"
 
 #: library/templates/base.html:17
 msgid "home"
-msgstr ""
+msgstr "pradžia"
 
 #: library/templates/base.html:22
 msgid "logout"
-msgstr ""
+msgstr "atsijungti"
 
 #: library/templates/base.html:23
 msgid "my books"
-msgstr ""
+msgstr "mano knygos"
 
 #: library/templates/base.html:25
 msgid "login"
-msgstr ""
+msgstr "prisijungti"
 
 #: library/templates/base.html:26
 msgid "Sign up"
-msgstr ""
+msgstr "Registruotis"
 
 #: library/templates/base.html:30
 msgid "admin"
-msgstr ""
+msgstr "adminas"
 
 #: library/templates/base.html:54
 msgid "team"
-msgstr ""
+msgstr "komanda"
 
 #: library/views.py:104
 msgid "Review posted!"
-msgstr ""
+msgstr "Peržiūra paskelbta!"
 
 #: library/views.py:178
 msgid "Book now is taken or extended."
-msgstr ""
+msgstr "Knyga paimta arba pratęsta."
 
 #: library/views.py:196
 msgid "Book is now returned."
-msgstr ""
+msgstr "Knyga dabar grąžinta."
