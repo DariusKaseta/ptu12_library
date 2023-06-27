@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  ptu12_library:
+    build: .
+    image: python:ptu12_library
+    container_name: ptu12_library.dev
+    tty: true
+    stdin_open: true
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./ptu12_library:/app
+    command: >
+      bash -c "python manage.py migrate &&
+               python manage.py collectstatic --noinput &&
+               gunicorn ptu12_library.wsgi --bind 0.0.0.0:8000"
+  nginx:
+    build: ./nginx/.
+    image: nginx:ptu12_library
+    container_name: ptu12_library.nginx
+    restart: always
+    ports:
+      - 80:80
+    links:
+      - ptu12_library:ptu12_library
+    volumes:
+      - ./ptu12_library/media:/app/media
+      - ./ptu12_library/static:/app/static
