@@ -1,0 +1,728 @@
+[
+{
+  "model": "library.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Artificial Intelligence"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Science"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Parallel Universes"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Space"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Adventure"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Enterpreneurship"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Business"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Genetics"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Psychology"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Chaos Theory"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 11,
+  "fields": {
+    "name": "Economics"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 12,
+  "fields": {
+    "name": "Agile"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 13,
+  "fields": {
+    "name": "Focusing"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 14,
+  "fields": {
+    "name": "Healthcare"
+  }
+},
+{
+  "model": "library.genre",
+  "pk": 15,
+  "fields": {
+    "name": "Neuroscience"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 1,
+  "fields": {
+    "first_name": "Nick",
+    "last_name": "Bostrom",
+    "biography": "<p>Nick Bostrom is a Swedish philosopher at the University of Oxford known for his work on existential risk, the anthropic principle, human enhancement ethics, whole brain emulation, superintelligence risks, and the reversal test.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 2,
+  "fields": {
+    "first_name": "Carlo",
+    "last_name": "Rovelli",
+    "biography": "<p>Carlo Rovelli is an Italian theoretical physicist and writer who has worked in Italy, the United States and, since 2000, in France. He is also currently a Distinguished Visiting Research Chair at the Perimeter Institute, and core member of the Rotman Institute of Philosophy of Western University.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 3,
+  "fields": {
+    "first_name": "Carl",
+    "last_name": "Sagan",
+    "biography": "<p>Carl Edward Sagan was an American astronomer, planetary scientist, cosmologist, astrophysicist, astrobiologist, science communicator, author, and professor.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 4,
+  "fields": {
+    "first_name": "Derek",
+    "last_name": "Sivers",
+    "biography": "<p>I&rsquo;ve been a musician, circus performer, entrepreneur, and TED speaker. I&rsquo;m a slow thinker, explorer, xenophile, and I love a different point of view. California native, I now live in New Zealand.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 5,
+  "fields": {
+    "first_name": "Richard",
+    "last_name": "Dawkins",
+    "biography": "<p>Richard Dawkins FRS FRSL is a British evolutionary biologist and author. He is an emeritus fellow of New College, Oxford, and was Professor for Public Understanding of Science in the University of Oxford from 1995 to 2008. His 1976 book The Selfish Gene popularised the gene-centred view of evolution.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 6,
+  "fields": {
+    "first_name": "Jordan B.",
+    "last_name": "Peterson",
+    "biography": "<p><strong>Jordan Bernt Peterson</strong>&nbsp;(born 12 June 1962) is a Canadian <a title=\"Psychologist\" href=\"https://en.wikipedia.org/wiki/Psychologist\">psychologist</a> <a title=\"Author\" href=\"https://en.wikipedia.org/wiki/Author\">author</a>, and <a class=\"mw-redirect\" title=\"Media commentator\" href=\"https://en.wikipedia.org/wiki/Media_commentator\">media commentator</a>. He began to receive widespread attention in the late 2010s for his views on cultural and political issues, often described as <a class=\"mw-redirect\" title=\"Conservative\" href=\"https://en.wikipedia.org/wiki/Conservative\">conservative</a>. Peterson has described himself as a <a title=\"Classical liberalism\" href=\"https://en.wikipedia.org/wiki/Classical_liberalism\">classic British liberal</a> and a <a title=\"Traditionalist conservatism\" href=\"https://en.wikipedia.org/wiki/Traditionalist_conservatism\">traditionalist</a>.</p>\r\n<p>Born and raised in&nbsp;<a title=\"Alberta\" href=\"https://en.wikipedia.org/wiki/Alberta\">Alberta</a>, Peterson obtained&nbsp;<a title=\"Bachelor's degree\" href=\"https://en.wikipedia.org/wiki/Bachelor%27s_degree\">bachelor's degrees</a>&nbsp;in&nbsp;<a title=\"Political science\" href=\"https://en.wikipedia.org/wiki/Political_science\">political science</a>&nbsp;and&nbsp;<a title=\"Psychology\" href=\"https://en.wikipedia.org/wiki/Psychology\">psychology</a>&nbsp;from the&nbsp;<a title=\"University of Alberta\" href=\"https://en.wikipedia.org/wiki/University_of_Alberta\">University of Alberta</a>&nbsp;and a&nbsp;<a title=\"Doctor of Philosophy\" href=\"https://en.wikipedia.org/wiki/Doctor_of_Philosophy\">Ph.D.</a>&nbsp;in clinical psychology from&nbsp;<a title=\"McGill University\" href=\"https://en.wikipedia.org/wiki/McGill_University\">McGill University</a>. After researching and teaching at&nbsp;<a title=\"Harvard University\" href=\"https://en.wikipedia.org/wiki/Harvard_University\">Harvard University</a>, he returned to Canada in 1998 and became a professor of psychology at the&nbsp;<a title=\"University of Toronto\" href=\"https://en.wikipedia.org/wiki/University_of_Toronto\">University of Toronto</a>. In 1999, he published his first book,&nbsp;<em><a class=\"mw-redirect\" title=\"Maps of Meaning: The Architecture of Belief\" href=\"https://en.wikipedia.org/wiki/Maps_of_Meaning:_The_Architecture_of_Belief\">Maps of Meaning: The Architecture of Belief</a></em>, which became the basis for many of his subsequent lectures. The book combined psychology,&nbsp;<a title=\"Myth\" href=\"https://en.wikipedia.org/wiki/Myth\">mythology</a>,&nbsp;<a title=\"Religion\" href=\"https://en.wikipedia.org/wiki/Religion\">religion</a>,&nbsp;<a title=\"Literature\" href=\"https://en.wikipedia.org/wiki/Literature\">literature</a>,&nbsp;<a title=\"Philosophy\" href=\"https://en.wikipedia.org/wiki/Philosophy\">philosophy</a>&nbsp;and&nbsp;<a title=\"Neuroscience\" href=\"https://en.wikipedia.org/wiki/Neuroscience\">neuroscience</a>&nbsp;to analyze systems of&nbsp;<a title=\"Belief\" href=\"https://en.wikipedia.org/wiki/Belief\">belief</a>&nbsp;and&nbsp;<a title=\"Meaning (psychology)\" href=\"https://en.wikipedia.org/wiki/Meaning_(psychology)\">meaning</a>.</p>\r\n<p>In 2016, Peterson released a series of&nbsp;<a title=\"YouTube\" href=\"https://en.wikipedia.org/wiki/YouTube\">YouTube</a>&nbsp;videos criticizing the&nbsp;<em><a title=\"An Act to amend the Canadian Human Rights Act and the Criminal Code\" href=\"https://en.wikipedia.org/wiki/An_Act_to_amend_the_Canadian_Human_Rights_Act_and_the_Criminal_Code\">Act to amend the Canadian Human Rights Act and the Criminal Code</a></em>&nbsp;(Bill C-16), passed by the&nbsp;<a title=\"Parliament of Canada\" href=\"https://en.wikipedia.org/wiki/Parliament_of_Canada\">Parliament of Canada</a>&nbsp;to introduce \"<a title=\"Gender identity\" href=\"https://en.wikipedia.org/wiki/Gender_identity\">gender identity</a>&nbsp;and&nbsp;<a title=\"Gender expression\" href=\"https://en.wikipedia.org/wiki/Gender_expression\">expression</a>\" as&nbsp;<a class=\"mw-redirect\" title=\"Prohibited grounds\" href=\"https://en.wikipedia.org/wiki/Prohibited_grounds\">prohibited grounds</a>&nbsp;for&nbsp;<a title=\"Discrimination\" href=\"https://en.wikipedia.org/wiki/Discrimination\">discrimination</a>.<sup id=\"cite_ref-discrimination_15-0\" class=\"reference\"></sup>&nbsp;Peterson claimed that the bill would make the use of certain&nbsp;<a title=\"Preferred gender pronoun\" href=\"https://en.wikipedia.org/wiki/Preferred_gender_pronoun\">gender pronouns</a>, \"<a title=\"Compelled speech\" href=\"https://en.wikipedia.org/wiki/Compelled_speech\">compelled speech</a>\", and related this argument to a general critique of&nbsp;<a title=\"Political correctness\" href=\"https://en.wikipedia.org/wiki/Political_correctness\">political correctness</a>&nbsp;and&nbsp;<a title=\"Identity politics\" href=\"https://en.wikipedia.org/wiki/Identity_politics\">identity politics</a>. He received significant media coverage, attracting both support and criticism.</p>\r\n<p>In 2018, he paused both his clinical practice and teaching duties and published his second book:&nbsp;<em><a title=\"12 Rules for Life\" href=\"https://en.wikipedia.org/wiki/12_Rules_for_Life\">12 Rules for Life: An Antidote to Chaos</a></em>. Promoted with a world tour, it became a&nbsp;<a title=\"Bestseller\" href=\"https://en.wikipedia.org/wiki/Bestseller\">bestseller</a>&nbsp;in several countries. Throughout 2019 and 2020, Peterson suffered health problems in the aftermath of severe&nbsp;<a title=\"Benzodiazepine withdrawal syndrome\" href=\"https://en.wikipedia.org/wiki/Benzodiazepine_withdrawal_syndrome\">benzodiazepine withdrawal syndrome</a>. In 2021, he published his third book,&nbsp;<em><a title=\"Beyond Order\" href=\"https://en.wikipedia.org/wiki/Beyond_Order\">Beyond Order: 12 More Rules for Life</a></em>, resigned from the University of Toronto, and returned to podcasting. In 2022, Peterson signed a content distribution deal with the conservative media company&nbsp;<em><a title=\"The Daily Wire\" href=\"https://en.wikipedia.org/wiki/The_Daily_Wire\">The Daily Wire</a></em>&nbsp;and became Chancellor of&nbsp;<a title=\"Ralston College\" href=\"https://en.wikipedia.org/wiki/Ralston_College\">Ralston College</a>. His various lectures and conversations, propagated mainly through YouTube and&nbsp;<a title=\"Podcast\" href=\"https://en.wikipedia.org/wiki/Podcast\">podcasts</a>, have gathered millions of views.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 7,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Tegmark",
+    "biography": "<p>Max Erik Tegmark is a Swedish-American physicist, cosmologist and machine learning researcher. He is a professor at the Massachusetts Institute of Technology and the president of the Future of Life Institute.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 8,
+  "fields": {
+    "first_name": "Peter",
+    "last_name": "Diamandis",
+    "biography": "<p>Peter H. Diamandis is an American marketer, engineer, physician, and entrepreneur of Greek-American ethnicity.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 9,
+  "fields": {
+    "first_name": "Sam",
+    "last_name": "Harris",
+    "biography": "<p>Samuel Benjamin Harris is an American philosopher, neuroscientist, author, and podcast host. His work touches on a range of topics, including rationality, religion, ethics, free will, neuroscience, meditation, psychedelics, philosophy of mind, politics, terrorism, and artificial intelligence.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 10,
+  "fields": {
+    "first_name": "Rolf",
+    "last_name": "Potts",
+    "biography": "<p>Rolf Potts is an American travel writer, essayist, podcaster, and author. He has written five books, including Vagabonding, Marco Polo Didn't Go There, Souvenir, and The Vagabond's Way. The lifestyle philosophies he outlined in Vagabonding are considered to have been a key influence on the digital nomad movement.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 11,
+  "fields": {
+    "first_name": "Jake",
+    "last_name": "Knapp",
+    "biography": "<p>Jake Knapp created the Design Sprint at Google, where he also helped build Gmail, cofounded Google Meet, and was a design partner at GV. He has since coached hundreds of teams on product strategy at places like Miro, Slack, Nike, LEGO, IDEO, the Wall Street Journal, and the Harvard Business School.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 12,
+  "fields": {
+    "first_name": "David",
+    "last_name": "Rock",
+    "biography": "<p>I have been interested in 'what makes us tick' since as early as I can remember, and my personal interest in brain research has been there since my teens. In 2004 I found that brain research provided a missing piece in our understanding of how to be more effective leaders, managers or coaches.</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 13,
+  "fields": {
+    "first_name": "Dr David A.",
+    "last_name": "Sinclair",
+    "biography": "<p>David A. Sinclair, Ph.D., A.O. is one of the world&rsquo;s most famous and influential scientists, known for his work on controlling the aging process. He is a tenured Professor at Harvard Medical School and TIME magazine named him &ldquo;one of the 100 most influential people in the world&rdquo; (2014) and among the &ldquo;Top 50 People in Healthcare&rdquo; (2018).</p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 14,
+  "fields": {
+    "first_name": "Dr Sanjay",
+    "last_name": "Gupta",
+    "biography": "<p><strong>Sanjay Gupta</strong>&nbsp;(born October 23, 1969) is an American&nbsp;<a class=\"mw-redirect\" title=\"Neurosurgeon\" href=\"https://en.wikipedia.org/wiki/Neurosurgeon\">neurosurgeon</a>,&nbsp;<a class=\"mw-redirect\" title=\"Medical reporter\" href=\"https://en.wikipedia.org/wiki/Medical_reporter\">medical reporter</a>, and writer. He serves as associate chief of the neurosurgery service at&nbsp;<a title=\"Grady Memorial Hospital\" href=\"https://en.wikipedia.org/wiki/Grady_Memorial_Hospital\">Grady Memorial Hospital</a>&nbsp;in&nbsp;<a title=\"Atlanta\" href=\"https://en.wikipedia.org/wiki/Atlanta\">Atlanta</a>, Georgia, associate professor of&nbsp;<a title=\"Neurosurgery\" href=\"https://en.wikipedia.org/wiki/Neurosurgery\">neurosurgery</a>&nbsp;at the&nbsp;<a title=\"Emory University School of Medicine\" href=\"https://en.wikipedia.org/wiki/Emory_University_School_of_Medicine\">Emory University School of Medicine</a>, member of the&nbsp;<a title=\"National Academy of Medicine\" href=\"https://en.wikipedia.org/wiki/National_Academy_of_Medicine\">National Academy of Medicine</a><sup id=\"cite_ref-1\" class=\"reference\"></sup>&nbsp;and&nbsp;<a title=\"American Academy of Arts and Sciences\" href=\"https://en.wikipedia.org/wiki/American_Academy_of_Arts_and_Sciences\">American Academy of Arts and Sciences</a><sup id=\"cite_ref-2\" class=\"reference\"></sup>&nbsp;and is the chief medical correspondent for&nbsp;<a title=\"CNN\" href=\"https://en.wikipedia.org/wiki/CNN\">CNN</a>.</p>\r\n<p>Gupta is known for his many TV appearances on health-related issues. During the&nbsp;<a title=\"COVID-19 pandemic\" href=\"https://en.wikipedia.org/wiki/COVID-19_pandemic\">2020 coronavirus pandemic</a>, he has been a frequent contributor to numerous CNN shows covering the crisis, as well as hosting a weekly town hall with&nbsp;<a title=\"Anderson Cooper\" href=\"https://en.wikipedia.org/wiki/Anderson_Cooper\">Anderson Cooper</a>.<sup id=\"cite_ref-3\" class=\"reference\"></sup>&nbsp;Gupta was the host of the CNN show&nbsp;<em><a title=\"Sanjay Gupta MD\" href=\"https://en.wikipedia.org/wiki/Sanjay_Gupta_MD\">Sanjay Gupta MD</a></em>&nbsp;for which he has won multiple&nbsp;<a title=\"Emmy Awards\" href=\"https://en.wikipedia.org/wiki/Emmy_Awards\">Emmy Awards</a>. Gupta also hosted the 6-part miniseries&nbsp;<em>Chasing Life</em>. He is a frequent contributor to other CNN programs such as&nbsp;<em><a title=\"American Morning\" href=\"https://en.wikipedia.org/wiki/American_Morning\">American Morning</a></em>,&nbsp;<em><a title=\"Larry King Live\" href=\"https://en.wikipedia.org/wiki/Larry_King_Live\">Larry King Live</a></em>,&nbsp;<em><a title=\"CNN Tonight\" href=\"https://en.wikipedia.org/wiki/CNN_Tonight\">CNN Tonight</a></em>, and&nbsp;<em><a title=\"Anderson Cooper 360&deg;\" href=\"https://en.wikipedia.org/wiki/Anderson_Cooper_360%C2%B0\">Anderson Cooper 360&deg;</a></em>. His reports from&nbsp;<a title=\"Charity Hospital (New Orleans)\" href=\"https://en.wikipedia.org/wiki/Charity_Hospital_(New_Orleans)\">Charity Hospital</a>,&nbsp;<a title=\"New Orleans\" href=\"https://en.wikipedia.org/wiki/New_Orleans\">New Orleans</a>, Louisiana, in the wake of&nbsp;<a title=\"Hurricane Katrina\" href=\"https://en.wikipedia.org/wiki/Hurricane_Katrina\">Hurricane Katrina</a>&nbsp;led to his winning a 2006 Emmy Award for&nbsp;<em>Outstanding Feature Story in a Regularly Scheduled Newscast</em>. He is also a special correspondent for&nbsp;<a title=\"CBS News\" href=\"https://en.wikipedia.org/wiki/CBS_News\">CBS News</a>.</p>\r\n<p>Sanjay Gupta also co-hosts the health conference Life Itself, along with&nbsp;<a title=\"Marc Hodosh\" href=\"https://en.wikipedia.org/wiki/Marc_Hodosh\">Marc Hodosh</a>&nbsp;(co-creator of TEDMED).<sup id=\"cite_ref-Life_Itself_4-0\" class=\"reference\"></sup>&nbsp;Gupta published a column in&nbsp;<em><a title=\"Time (magazine)\" href=\"https://en.wikipedia.org/wiki/Time_(magazine)\">Time</a></em>&nbsp;magazine and has written four books:&nbsp;<em>Chasing Life</em>,&nbsp;<em>Cheating Death</em>,&nbsp;<em>Monday Mornings: A Novel</em>, and&nbsp;<em>Keep Sharp</em>&nbsp;(Jan 2021).<sup id=\"cite_ref-national_bestseller_5-0\" class=\"reference\"></sup><sup id=\"cite_ref-NYT_bestseller_6-0\" class=\"reference\"></sup><sup id=\"cite_ref-7\" class=\"reference\"></sup></p>"
+  }
+},
+{
+  "model": "library.author",
+  "pk": 15,
+  "fields": {
+    "first_name": "Paulo",
+    "last_name": "Coelho",
+    "biography": "<p>Paulo Coelho is the author of \"The Alchemist\", he was born in 1947 in the city of Rio de Janeiro, Brazil. Being the author of 30 books that have sold over 320 million copies in 170 countries, he has become one of the most widely read authors in the world today.</p>"
+  }
+},
+{
+  "model": "library.book",
+  "pk": 1,
+  "fields": {
+    "title": "Superintelligence: Paths, Dangers, Strategies",
+    "summary": "<p>Superintelligence asks the questions: What happens when machines surpass humans in general intelligence? Will artificial agents save or destroy us? Nick Bostrom lays the foundation for understanding the future of humanity and intelligent life. The human brain has some capabilities that the brains of other animals lack. It is to these distinctive capabilities that our species owes its dominant position. If machine brains surpassed human brains in general intelligence, then this new superintelligence could become extremely powerful - possibly beyond our control. As the fate of the gorillas now depends more on humans than on the species itself, so would the fate of humankind depend on the actions of the machine superintelligence.</p>",
+    "author": 1,
+    "cover": "library/book_covers/superintelligence.jpg",
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 2,
+  "fields": {
+    "title": "Reality Is Not What It Seems: The Journey to Quantum Gravity",
+    "summary": "<p>Scientist Carlo Rovelli has spent his whole life exploring these questions and pushing the boundaries of what we know. Here he explains how our image of the world has changed throughout centuries. From Aristotle to Albert Einstein, Michael Faraday to the Higgs boson, he takes us on a wondrous journey to show us that beyond our ever-changing idea of reality is a whole new world that has yet to be discovered.</p>",
+    "author": 2,
+    "cover": "library/book_covers/reality.jpg",
+    "genre": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 3,
+  "fields": {
+    "title": "Cosmos: A Personal Voyage",
+    "summary": "<p>Cosmos is one of the bestselling science books of all time. In clear-eyed prose, Sagan reveals a jewel-like blue world inhabited by a life form that is just beginning to discover its own identity and to venture into the vast ocean of space. Featuring a new Introduction by Sagan's collaborator, Ann Druyan, and a new Foreword by astrophysicist Neil deGrasse Tyson, Cosmos retraces the fourteen billion years of cosmic evolution that have transformed matter into consciousness, exploring such topics as the origin of life, the human brain, Egyptian hieroglyphics, spacecraft missions, the death of the Sun, the evolution of galaxies, and the forces and individuals who helped to shape modern science.</p>",
+    "author": 3,
+    "cover": "library/book_covers/cosmos.jpg",
+    "genre": [
+      2,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 4,
+  "fields": {
+    "title": "Pale Blue Dot: A Vision of the Human Future in Space",
+    "summary": "<p>In Cosmos, the late astronomer Carl Sagan cast his gaze over the magnificent mystery of the Universe and made it accessible to millions of people around the world. Now in this stunning sequel, Carl Sagan completes his revolutionary journey through space and time. Future generations will look back on our epoch as the time when the human race finally broke into a radically new frontier--space. In Pale Blue Dot Sagan traces the spellbinding history of our launch into the cosmos and assesses the future that looms before us as we move out into our own solar system and on to distant galaxies beyond. The exploration and eventual settlement of other worlds is neither a fantasy nor luxury, insists Sagan, but rather a necessary condition for the survival of the human race.</p>",
+    "author": 3,
+    "cover": "library/book_covers/pale_blue_dot.jpg",
+    "genre": [
+      2,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 5,
+  "fields": {
+    "title": "Anything You Want: 40 Lessons for a New Kind of Entrepreneur",
+    "summary": "<p>When Derek Sivers started CD Baby, he wasn&rsquo;t planning on building a major business. He was a successful independent musician who just wanted to sell his CDs online. When no one would help him do it, he set out on his own and built an online store from scratch.</p>",
+    "author": 4,
+    "cover": "library/book_covers/anything_y_w.jpg",
+    "genre": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 6,
+  "fields": {
+    "title": "The Selfish Gene",
+    "summary": "<p>Richard Dawkins' brilliant reformulation of the theory of natural selection has the rare distinction of having provoked as much excitement and interest outside the scientific community as within it. His theories have helped change the whole nature of the study of social biology, and have forced thousands of readers to rethink their beliefs about life. In his internationally bestselling, now classic volume, The Selfish Gene, Dawkins explains how the selfish gene can also be a subtle gene. The world of the selfish gene revolves around savage competition, ruthless exploitation, and deceit, and yet, Dawkins argues, acts of apparent altruism do exist in nature. Bees, for example, will commit suicide when they sting to protect the hive, and birds will risk their lives to warn the flock of an approaching hawk. This 30th anniversary edition of Dawkins' fascinating book retains all original material, including the two enlightening chapters added in the second edition. In a new Introduction the author presents his thoughts thirty years after the publication of his first and most famous book, while the inclusion of the two-page original Foreword by brilliant American scientist Robert Trivers shows the enthusiastic reaction of the scientific community at that time. This edition is a celebration of a remarkable exposition of evolutionary thought, a work that has been widely hailed for its stylistic brilliance and deep scientific insights, and that continues to stimulate whole new areas of research today.</p>",
+    "author": 5,
+    "cover": "library/book_covers/selfish_gene.jpg",
+    "genre": [
+      2,
+      8,
+      14
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 7,
+  "fields": {
+    "title": "Beyond Order: 12 More Rules for Life",
+    "summary": "<p>Now in this long-awaited sequel, Peterson goes further, showing that part of life's meaning comes from reaching out into the domain beyond what we know and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality. Beyond Order therefore calls on us to balance the two fundamental principles of reality - order and chaos &shy;- and reveals the profound meaning that can be found on the path that divides them.</p>",
+    "author": 6,
+    "cover": "library/book_covers/beyond_order.jpg",
+    "genre": [
+      2,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 8,
+  "fields": {
+    "title": "12 Rules for Life: An Antidote to Chaos",
+    "summary": "<p>How should we live properly in a world of chaos and uncertainty? Jordan Peterson has helped millions of people, young and old, men and women, aim at a life of responsibility and meaning. Now he can help you.</p>",
+    "author": 6,
+    "cover": "library/book_covers/12rules.jpg",
+    "genre": [
+      2,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 9,
+  "fields": {
+    "title": "Life 3.0",
+    "summary": "<p>We stand at the beginning of a new era. What was once science fiction is fast becoming reality, as AI transforms war, crime, justice, jobs and society - and even our very sense of what it means to be human. More than any other technology, AI has the potential to revolutionise our collective future - and there's nobody better situated to explore that future than Max Tegmark, an MIT professor and cofounder of the Future of Life Institute, whose work has helped mainstream research on how to keep AI beneficial.</p>",
+    "author": 7,
+    "cover": "library/book_covers/life3.jpg",
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 10,
+  "fields": {
+    "title": "Get Abundance: Why Your Future Is Brighter Than You Think",
+    "summary": "<p>Discover the easiest, fastest way to achieve abundant wealth in the 21st century! How would you like to be the center of a massive outpouring of wealth, innovation, success, and prosperity... the force behind a wave of abundance that rolls over your friends, family, and associates? Now you can be! Despite what the pessimists say, we live in an era of exponential growth and abundance. Astonishing new technologies are driving a new world where the unimaginable is being imagined and turned into reality. In this optimistic yet realistic program, X PRIZE Foundation chairman and Singularity University co-founder Peter Diamandis and his team of experts provide dozens of ideas, techniques, and strategies you can apply to your life, business, or career to accelerate your progress in line with these compelling advances. In this thrilling antidote to today&rsquo;s dark pessimism, Peter downloads to you his exhaustive research and extensive interviews with top scientists, innovators, and captains of industry to explore today&rsquo;s most important emerging forces. He examines the stunning impact these forces are having on categories of critical importance, while also establishing hard targets and a plan for change. Providing abundance - for yourself, your family and the world - is your single greatest challenge. But there will be no end to the abundance and wealth of those who capitalize on today&rsquo;s new and emerging technologies.</p>",
+    "author": 8,
+    "cover": "library/book_covers/get_abundance.jpg",
+    "genre": [
+      2,
+      6,
+      11
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 11,
+  "fields": {
+    "title": "Free Will",
+    "summary": "<p>A belief in free will touches nearly everything that human beings value. It is difficult to think about law, politics, religion, public policy, intimate relationships, morality&mdash;as well as feelings of remorse or personal achievement&mdash;without first imagining that every person is the true source of his or her thoughts and actions. And yet the facts tell us that free will is an illusion. In this enlightening book, Sam Harris argues that this truth about the human mind does not undermine morality or diminish the importance of social and political freedom, but it can and should change the way we think about some of the most important questions in life.</p>",
+    "author": 9,
+    "cover": "library/book_covers/free_will.jpg",
+    "genre": [
+      2,
+      9,
+      15
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 12,
+  "fields": {
+    "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel",
+    "summary": "<p>Vagabonding is about taking time off from your normal life - from six weeks to four months to two years - to discover and experience the world on your own terms. Veteran shoestring traveler Rolf Potts shows how anyone armed with an independent spirit can achieve the dream of extended overseas travel. Potts gives the necessary information on:</p>",
+    "author": 10,
+    "cover": "library/book_covers/vagabonding.jpg",
+    "genre": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 13,
+  "fields": {
+    "title": "Sprint: How to solve big problems and test new ideas in just five days",
+    "summary": "<p>Entrepreneurs and leaders face big questions every day. How should you be focusing your efforts? What will your idea look like in real life? How do you start? How many meetings and discussions does it take before you can be sure you've got the right solution? Now there's a surefire way to answer these important questions: the sprint.</p>",
+    "author": 11,
+    "cover": "library/book_covers/sprint.jpg",
+    "genre": [
+      2,
+      6,
+      12
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 14,
+  "fields": {
+    "title": "Your Brain at Work, Revised and Updated: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter All Day Long",
+    "summary": "<p>A researcher and consultant burrows deep inside the heads of one modern two-career couple to examine how each partner processes the workday - revealing how a more nuanced understanding of the brain can allow us to better organize, prioritize, recall, and sort our daily lives. Emily and Paul are the parents of two young children, and professionals with different careers. Emily is the newly promoted vice president of marketing at a large corporation; Paul works from home or from clients' offices as an independent IT consultant. Their days are filled with a bewildering blizzard of emails, phone calls, more emails, meetings, projects, proposals, and plans. Just staying ahead of the storm has become a seemingly insurmountable task.</p>",
+    "author": 12,
+    "cover": "library/book_covers/brain_at_work.jpg",
+    "genre": [
+      2,
+      9,
+      13,
+      15
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 15,
+  "fields": {
+    "title": "Lifespan Why We Age – and Why We Don’t Have To",
+    "summary": "<p>In this paradigm-shifting audiobook from acclaimed Harvard Medical School doctor and one of Time magazine&rsquo;s 100 most influential people on earth, Dr. David Sinclair reveals that everything we think we know about ageing is wrong, and shares the surprising, scientifically proven methods that can help listeners live younger, longer. For decades, the medical community has looked to a variety of reasons for why we age, and the consensus is that no-one dies of old age; they die of age-related diseases. That's because ageing is not a disease - it is inevitable.</p>",
+    "author": 13,
+    "cover": "library/book_covers/lifespan.jpg",
+    "genre": [
+      2,
+      8,
+      14
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 16,
+  "fields": {
+    "title": "Keep Sharp: Build a Better Brain at Any Age",
+    "summary": "<p>Throughout our lives, we are always looking for ways to keep our mind sharp and effortlessly productive. In this book, globetrotting neurosurgeon Dr Sanjay Gupta offers insights from top scientists all over the world, whose cutting-edge research can help you heighten and protect brain function and maintain cognitive health at any age.</p>",
+    "author": 14,
+    "cover": "library/book_covers/keep_sharp.jpg",
+    "genre": [
+      2,
+      9,
+      13,
+      15
+    ]
+  }
+},
+{
+  "model": "library.book",
+  "pk": 17,
+  "fields": {
+    "title": "The Alchemist: A Fable About Following Your Dream",
+    "summary": "<p>Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its simplicity and wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of treasure buried in the Pyramids. Along the way he meets a Gypsy woman, a man who calls himself king, and an Alchemist, all of whom point Santiago in the direction of his quest. No one knows what the treasure is, or if Santiago will be able to surmount the obstacles along the way But what starts out as a journey to find worldly goods turns into a meditation on the treasures found within. Lush, evocative, and deeply humane, the story of Santiago is art eternal testament to the transforming power of our dreams and the importance of listening to our hearts.</p>",
+    "author": 15,
+    "cover": "library/book_covers/alchemist.jpg",
+    "genre": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "009ca820-d4f7-4448-9f97-d3f540b6c47a",
+  "fields": {
+    "book": 4,
+    "due_back": null,
+    "reader": null,
+    "status": 0
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "048e9257-9c34-4dab-8282-1a6a3329cf6e",
+  "fields": {
+    "book": 2,
+    "due_back": null,
+    "reader": null,
+    "status": 0
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "2d77cd2b-e6e5-4749-8ffc-e5e9171f72b9",
+  "fields": {
+    "book": 3,
+    "due_back": null,
+    "reader": null,
+    "status": 3
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "36fd0373-7940-44cd-a62f-075d8e5768e0",
+  "fields": {
+    "book": 9,
+    "due_back": "2023-06-07",
+    "reader": 1,
+    "status": 2
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "3a1703b5-0d45-4f6f-82c7-34cde1e23666",
+  "fields": {
+    "book": 4,
+    "due_back": "2023-06-05",
+    "reader": 1,
+    "status": 1
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "5d9854ae-8a11-4259-8724-403a354a4bd5",
+  "fields": {
+    "book": 3,
+    "due_back": "2023-05-31",
+    "reader": 1,
+    "status": 2
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "71a5285f-29d7-4622-89c4-77f09bcc0210",
+  "fields": {
+    "book": 2,
+    "due_back": null,
+    "reader": null,
+    "status": 0
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "8160a6bd-011d-49ea-8fa8-6beb7212f7eb",
+  "fields": {
+    "book": 15,
+    "due_back": "2023-07-11",
+    "reader": 4,
+    "status": 1
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "91b6cbd1-22b9-4bd2-817b-2ab29ce6ea9a",
+  "fields": {
+    "book": 4,
+    "due_back": null,
+    "reader": null,
+    "status": 0
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "ba9f0933-c5a2-4f83-9f4f-d7f0d331c1e7",
+  "fields": {
+    "book": 1,
+    "due_back": null,
+    "reader": null,
+    "status": 0
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "e1087fbe-5f99-43e5-9b47-b172e9433782",
+  "fields": {
+    "book": 3,
+    "due_back": null,
+    "reader": null,
+    "status": 3
+  }
+},
+{
+  "model": "library.bookinstance",
+  "pk": "fba75986-2adc-4bf6-8e79-e43875021bc9",
+  "fields": {
+    "book": 8,
+    "due_back": "2023-06-22",
+    "reader": 2,
+    "status": 1
+  }
+},
+{
+  "model": "library.bookreview",
+  "pk": 1,
+  "fields": {
+    "book": 9,
+    "reviewer": 1,
+    "reviewed_at": "2023-06-07T05:44:49.261Z",
+    "content": "Nice case analysis of what our life could be with superintelligent AI around.\r\nSome are scary, some positive. I think it will be positive."
+  }
+},
+{
+  "model": "library.bookreview",
+  "pk": 2,
+  "fields": {
+    "book": 9,
+    "reviewer": 1,
+    "reviewed_at": "2023-06-07T06:19:32.126Z",
+    "content": "Hacking AI"
+  }
+},
+{
+  "model": "library.bookreview",
+  "pk": 3,
+  "fields": {
+    "book": 9,
+    "reviewer": 1,
+    "reviewed_at": "2023-06-07T06:20:18.205Z",
+    "content": "Hacking AI"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "darbuotojas",
+    "permissions": [
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$FD2yGRRSbQ83Kk2rEmp8aj$p2MT7iANo/0vfJixrysktj/qoyWD5JbfzAFqadCfevo=",
+    "last_login": "2023-06-12T07:31:11.921Z",
+    "is_superuser": true,
+    "username": "kestas",
+    "first_name": "Kęstutis",
+    "last_name": "Januškevičius",
+    "email": "kestas@midonow.fi",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-29T11:24:53Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$lQb9fdMNJ3xgqsl9hy0ypd$buiEKo0Pk7OdOXcYu7KtEcOJdfwtQOOdFKMjXW2ILu0=",
+    "last_login": "2023-06-08T06:57:54.578Z",
+    "is_superuser": false,
+    "username": "registratura",
+    "first_name": "PTU12",
+    "last_name": "reg",
+    "email": "office@midonow.fi",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-06-05T06:01:59Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$o3LvzhpfdavU5VQEwPworI$/Ii4/McvZhF0ocudooxTKX2KznltNnYXzNK15yzwhsg=",
+    "last_login": "2023-06-06T11:42:50.427Z",
+    "is_superuser": false,
+    "username": "skaitytojas",
+    "first_name": "Knygu",
+    "last_name": "Skaitytojas",
+    "email": "infohata@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-06-06T11:42:46.217Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$vTyE3uD66xQSMjfA8vMJ48$hy5oY4tYNycxbcejFW8e+CsNL2WsWyQ+K1Fuh8nnuoQ=",
+    "last_login": "2023-06-27T08:40:32.628Z",
+    "is_superuser": false,
+    "username": "naujas",
+    "first_name": "Naujas",
+    "last_name": "Signalius",
+    "email": "naujas@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-06-07T12:36:31.788Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

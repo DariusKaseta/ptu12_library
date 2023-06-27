@@ -11,10 +11,25 @@ services:
       - 8000:8000
     volumes:
       - ./ptu12_library:/app
+    depends_on:
+      - db
+    links:
+      - db:postgres
     command: >
-      bash -c "python manage.py migrate &&
+      bash -c "python wait_for_postgres.py &&
+               python manage.py migrate &&
                python manage.py collectstatic --noinput &&
                gunicorn ptu12_library.wsgi --bind 0.0.0.0:8000"
+  db:
+    image: postgres
+    container_name: ptu12_library.db
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./dbdata:/var/lib/postgresql/data
+    env_file:
+      - .env
   nginx:
     build: ./nginx/.
     image: nginx:ptu12_library
